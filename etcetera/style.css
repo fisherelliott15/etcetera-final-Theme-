@@ -1,0 +1,589 @@
+/*
+	Theme Name: Et Cetera - Elliott
+	Theme URI: http://html5blank.com
+	Description: HTML5 Blank WordPress Theme
+	Version: 1.4.3
+	Author: Todd Motto (@toddmotto)
+	Author URI: http://toddmotto.com
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+/* html element 62.5% font-size for REM use */
+html {
+	font-size:62.5%;
+}
+body {
+	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color:white;
+}
+/* clear */
+.clear:before,
+.clear:after {
+    content:' ';
+    display:table;
+}
+
+.clear:after {
+    clear:both;
+}
+.clear {
+    *zoom:1;
+}
+img {
+	max-width:100%;
+	vertical-align:bottom;
+}
+a {
+	color:black;
+	text-decoration:none;
+}
+.redbutton a{
+	color: white;
+}
+a:hover {
+	color:red;
+}
+a:focus {
+	outline:0;
+}
+a:hover,
+a:active {
+	outline:0;
+}
+input:focus {
+	outline:0;
+	border:1px solid #04A4CC;
+}
+.woocommerce #primary .images img {
+    width: auto;
+}
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+/* wrapper */
+.wrapper {
+	max-width:80%;
+	width:95%;
+	margin:0 auto;
+	position:relative;
+}
+/* header */
+.header {
+
+}
+/* logo */
+.logo {
+
+}
+.logo-img {
+
+}
+/* nav */
+.nav {
+
+}
+/* sidebar */
+.sidebar {
+
+}
+/* footer */
+.footer {
+
+}
+
+/*------------------------------------*\
+    PAGES
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+    IMAGES
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+@font-face {
+	font-family:'Font-Name';
+	src:url('fonts/font-name.eot');
+	src:url('fonts/font-name.eot?#iefix') format('embedded-opentype'),
+		url('fonts/font-name.woff') format('woff'),
+		url('fonts/font-name.ttf') format('truetype'),
+		url('fonts/font-name.svg#font-name') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+@media only screen and (min-width:320px) {
+
+}
+@media only screen and (min-width:480px) {
+
+}
+@media only screen and (min-width:768px) {
+
+}
+@media only screen and (min-width:1024px) {
+
+}
+@media only screen and (min-width:1140px) {
+
+}
+@media only screen and (min-width:1280px) {
+
+}
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+	   only screen and (min-resolution:144dpi) {
+
+}
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+
+::selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-webkit-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-moz-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+
+/*------------------------------------*\
+    WORDPRESS CORE
+\*------------------------------------*/
+
+.alignnone {
+	margin:5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+	display:block;
+	margin:5px auto 5px auto;
+}
+.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+a img.alignnone {
+	margin:5px 20px 20px 0;
+}
+a img.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.aligncenter {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.wp-caption {
+	background:#FFF;
+	border:1px solid #F0F0F0;
+	max-width:96%;
+	padding:5px 3px 10px;
+	text-align:center;
+}
+.wp-caption.alignnone {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignright {
+	margin:5px 0 20px 20px;
+}
+.wp-caption img {
+	border:0 none;
+	height:auto;
+	margin:0;
+	max-width:98.5%;
+	padding:0;
+	width:auto;
+}
+.wp-caption .wp-caption-text,
+.gallery-caption {
+	font-size:11px;
+	line-height:17px;
+	margin:0;
+	padding:0 4px 5px;
+}
+.sticky {
+
+}
+.bypostauthor {
+
+}
+
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+
+@media print {
+	* {
+		background:transparent !important;
+		color:#000 !important;
+		box-shadow:none !important;
+		text-shadow:none !important;
+	}
+	a,
+	a:visited {
+		text-decoration:underline;
+	}
+	a[href]:after {
+		content:" (" attr(href) ")";
+	}
+	abbr[title]:after {
+		content:" (" attr(title) ")";
+	}
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content:"";
+	}
+	pre,blockquote {
+		border:1px solid #999;
+		page-break-inside:avoid;
+	}
+	thead {
+		display:table-header-group;
+	}
+	tr,img {
+		page-break-inside:avoid;
+	}
+	img {
+		max-width:100% !important;
+	}
+	@page {
+		margin:0.5cm;
+	}
+	p,
+	h2,
+	h3 {
+		orphans:3;
+		widows:3;
+	}
+	h2,
+	h3 {
+		page-break-after:avoid;
+	}
+}
+
+/*------------------------------------*\
+    Elliott
+\*------------------------------------*/
+/* core styles */
+body{
+  margin: 0;
+  font-family: 'Gotic A1', sans-serif;
+  background-color: white;
+  color: black;
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: center;
+
+}
+h3{
+  color: black;
+  font-family:'Gothic A1', sans-serif;
+}
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+h1, h2, h3{
+  margin:0;
+  padding: 5em 1;
+  font-family: 'Spectral SC', serif;
+
+}
+p{
+  margin: 0;
+  padding: .5em 0;
+}
+li.menu-item a{
+  font-family: 'Spectral SC', serif;
+  font-size: 17px;
+  color: white;
+  text-decoration: none;
+  padding: 1em 1em;
+  margin:.5em 0;
+  transition: all .3s ease-in-out;
+}
+li.menu-item a:hover{
+  background: white;
+  color:black;
+}
+#showcase .btn{
+
+}
+#showcase{
+  min-height: 150px;
+  color: white;
+  text-align: center;
+}
+#showcase h1{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#showcase{
+  background-image: linear-gradient(to right, red ,#dd104f);
+  width: 100%;
+}
+#showcase.content-wrap,
+#section-a.content-wrap {
+  padding: 0 1.5em;
+}
+
+/* section-a */
+#section-a {
+  background: white;
+  color:black;
+  padding-bottom: 2em;
+}
+#section-b img{
+  width: 300px;
+  height: auto;
+  background-position: center;
+  background-size:contain;
+}
+#section-b p{
+  color: white;
+  background: red;
+  padding: 12px;
+  font-size: 20px;
+}
+#section-b li{
+  min-width: 400px;
+}
+
+
+#section-b,
+#section-c {
+padding: 2em 1em 1em;
+}
+#section-b ul,
+#section-c ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: all .2s ease-in-out;
+  box-shadow: 5px 10px #0000;
+}
+/* #section-b ul:hover, */
+#section-c ul:hover{
+  transform: scale(1.15);
+}
+#section-b li,
+#section-c li{
+  margin-bottom: 1em;
+  background: #FFF;
+  color: black;
+}
+.card a{
+  text-decoration: none;
+}
+.card-content{
+  padding: 1.5em;
+  text-decoration: none;
+}
+.card-content2{
+  text-decoration: none;
+}
+.card-content2 h1{
+  color: red;
+}
+.card-content2 p{
+  background-color: white;
+  color: red;
+  font-size: 16px;
+}
+.card img{
+  width: 300px;
+  height: auto;
+}
+/* section-c */
+
+#section-c {
+  background: #FFF;
+  color: black;
+  padding: 2em;
+}
+/* section d boxes n stuff */
+
+#section-d p{
+
+  font-size: 24px;
+  padding: 2em;
+  color: #FFF;
+}
+#section-d .box:first-child{
+  background: red;
+}
+.redbutton{
+  width: 300px;
+  height: 100px;
+  background-image: linear-gradient(to right, #ff0000 ,#dd104f);
+  color: white;
+  font-size: 20px;
+  font-family: 'Gothic A1';
+  transition: all .3s ease-in-out;
+
+}
+.redbutton:hover{
+  background: white;
+  color:red;
+  border: red;
+}
+.redbutton2{
+  width: 300px;
+  height: 100px;
+  background-image: linear-gradient(to right, #ff0000 ,#dd104f);
+  color: white;
+  font-size: 20px;
+  font-family: 'Gothic A1';
+  transition: all .3s ease-in-out;
+
+}
+.redbutton2:hover{
+  background: white;
+  color:red;
+  border: red;
+}
+
+.crossedout{
+  color: grey;
+  text-decoration: line-through;
+}
+.grey{
+  color: grey;
+}
+.newprice{
+  color: red;
+}
+/* footer */
+
+#main-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;;
+  background: red;
+  color: #fff;
+  text-align: center;
+}
+#rec_container img{
+  float: left;
+  opacity: .7;
+  padding: 20px;
+  height: 100px;
+  width: auto;
+
+
+}
+#main-footer img{
+  /* width: 50px;
+  padding: 2em; */
+}
+#item1 h1{
+  color: white;
+  text-decoration: none;
+}
+/* media queries */
+@media(max-width: 1080px){
+  #content-title a{
+    width: 50px;
+    height: auto;
+  }
+
+}
+@media(min-width: 480px){
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr repeat(2,minmax(auto, 25em))
+    1fr;
+  }
+
+  }
+  #section-a .content-img {
+    columns: 2;
+    column-gap: 2em;
+  }
+  #section-a .content-img p {
+    padding-top: 0;
+  }
+  #section-a .content-img p {
+    padding-top: 0;
+  }
+  .wrapper,
+  #section-b ul,
+  #section-c ul {
+    grid-column: 2/4;
+  }
+	ul{
+		list-style-type: none;
+	}
+	li {
+    display: inline;
+}
+  .box, #main-footer div{
+    grid-column: span 2;
+  }
+  .box img{
+    float: left;
+    width: 100px;
+  }
+  #section-b ul,
+  #section-c ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  #section-b li{
+    width: 31%;
+
+  }
+}
